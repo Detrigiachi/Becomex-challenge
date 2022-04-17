@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+
+namespace SocialMedia.API.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class AlemanhaController : ControllerBase
+    {
+        public AlemanhaController()
+        {
+        }
+
+        [HttpGet]
+        public string Get()
+        {
+            return "População Alemanha: 83,24 milhões; Timezone: Alemanha (GMT+2); Moeda: Euro; Lingua: Alemão; Capital: Berlim; Blocos econômicos: OMC, União Europeia, OCDE";
+        }
+    }
+}
